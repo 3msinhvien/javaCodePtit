@@ -1,17 +1,23 @@
 import java.util.Scanner;
 
-public class J03008 {
+public class J03025 {
     public static boolean check( String s ) {
+        String rev = new StringBuilder(s).reverse().toString();
+        if (s.compareTo(rev) == 0)
+        {
+            if (s.length() % 2 == 1) return true;
+            else return false;
+        }
+        int cnt = 0;
         int l = 0, r = s.length() - 1;
         while (l < r)
         {
-            if (s.charAt(l) != s.charAt(r)) return false;
-            if (s.charAt(l) != '2' && s.charAt(l) != '3' && s.charAt(l) != '5' && s.charAt(l) != '7') return false;
-            if (s.charAt(r) != '2' && s.charAt(r) != '5' && s.charAt(r) != '7' && s.charAt(r) != '3') return false;
+            if (s.charAt(l) != s.charAt(r)) cnt++;
             l++;
             r--;
         }
-        return true;
+        if (cnt == 1) return true;
+        return false;
     }
 
     public static void main( String[] args ) {

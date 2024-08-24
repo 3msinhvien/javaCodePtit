@@ -32,6 +32,7 @@ public class J03021 {
             //System.out.println(rev);
             if (rev.toString().equals(btn.toString())) System.out.println("YES");
             else System.out.println("NO");
+
         }
     }
 }

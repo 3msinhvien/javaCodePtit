@@ -16,7 +16,7 @@ public class J02005 {
         int idx = 0 ;
         for ( int i = 0 ; i < n ; i++)
         {
-            for ( int j : b )
+            for (int j : b )
             {
                 if ( a[i] == j )
                 {

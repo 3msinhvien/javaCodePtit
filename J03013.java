@@ -2,11 +2,12 @@ import java.math.BigInteger;
 import java.util.Scanner;
 
 public class J03013 {
-    public static void main(String[] args) {
+    public static void main( String[] args ) {
         Scanner sc = new Scanner(System.in);
         int t = sc.nextInt();
         sc.nextLine();
-        while (t-- > 0) {
+        while (t-- > 0)
+        {
             String num1 = sc.nextLine();
             String num2 = sc.nextLine();
             BigInteger n1 = new BigInteger(num1);
