@@ -8,6 +8,6 @@ public class J01013 {
         HashMap<Integer, Integer> map = new HashMap<>();
         map.put(1, 2);
         map.put(2, 3);
-        //Set<Map.Entry<Integer,Integer>> entrySet = map.entrySet() ;
+        Set<Map.Entry<Integer,Integer>> entrySet = map.entrySet() ;
     }
 }
