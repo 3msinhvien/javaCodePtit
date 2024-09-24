@@ -1,20 +1,22 @@
+package Contest1;
+
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
-public class J07002 {
-    public static void main( String[] args ) {
+public class E1 {
+    public static void main(String[] args) {
         File f = new File("DATA.in");
-        try
-        {
+        try {
             long sum = 0;
             Scanner sc = new Scanner(f);
+            long maxVal = Integer.MAX_VALUE;
             while (sc.hasNext())
             {
-                if (sc.hasNextInt())
+                if (sc.hasNextLong() )
                 {
-                    int num = sc.nextInt();
-                    System.out.println(num);
+                    long num = sc.nextLong();
+                    if ( num > maxVal )
                     sum += num;
                 } else
                 {
@@ -22,10 +24,10 @@ public class J07002 {
                 }
             }
             System.out.println(sum);
-            sc.close();
-        } catch (FileNotFoundException e)
-        {
+        } catch (FileNotFoundException e) {
             System.out.println(e);
         }
     }
+
+    ;
 }
