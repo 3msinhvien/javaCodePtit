@@ -16,11 +16,10 @@ public class E2 {
             BigInteger minVal = new BigInteger("1000000000000000");
             BigInteger maxVal = BigInteger.ZERO;
             BigInteger sum = BigInteger.ZERO;
-            while (sc.hasNextLine())
-            {
+            while (sc.hasNextLine()) {
                 BigInteger n = new BigInteger(sc.nextLine());
-                if ( n.compareTo(maxVal) > 0 ) maxVal = n ;
-                if ( n.compareTo(minVal) < 0 ) minVal = n ;
+                if (n.compareTo(maxVal) > 0) maxVal = n;
+                if (n.compareTo(minVal) < 0) minVal = n;
                 sum = sum.add(n);
             }
             System.out.println(minVal);

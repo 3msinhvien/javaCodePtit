@@ -11,15 +11,12 @@ public class E1 {
             long sum = 0;
             Scanner sc = new Scanner(f);
             long maxVal = Integer.MAX_VALUE;
-            while (sc.hasNext())
-            {
-                if (sc.hasNextLong() )
-                {
+            while (sc.hasNext()) {
+                if (sc.hasNextLong()) {
                     long num = sc.nextLong();
-                    if ( num > maxVal )
-                    sum += num;
-                } else
-                {
+                    if (num > maxVal)
+                        sum += num;
+                } else {
                     sc.next();
                 }
             }
