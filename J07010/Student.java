@@ -16,6 +16,11 @@ public class Student {
         this.gpa = gpa;
         this.id = id;
     }
+
+    public Student() {
+
+    }
+
     public void getDate() {
         StringBuilder sb = new StringBuilder(this.dob);
         if (sb.charAt(1) == '/') sb.insert(0, "0");

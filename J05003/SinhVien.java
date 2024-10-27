@@ -6,14 +6,18 @@ public class SinhVien {
    private String hoTen;
    private String lop;
    private String ngaySinh;
-   private double gpa;
+   private Float gpa;
 
-    public SinhVien(int stt , String hoTen, String lop, String ngaySinh, double gpa) {
+    public SinhVien(int stt , String hoTen, String lop, String ngaySinh, float gpa) {
         this.stt = stt;
         this.hoTen = hoTen;
         this.lop = lop;
         this.ngaySinh = ngaySinh;
         this.gpa = gpa;
+    }
+
+    public SinhVien() {
+
     }
 
     public void setMaSinhVien () {

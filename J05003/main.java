@@ -13,7 +13,8 @@ public class main {
                 String hoTen = sc.nextLine();
                 String lop = sc.nextLine();
                 String ngaySinh = sc.nextLine();
-                double gpa = sc.nextDouble();
+                float gpa = sc.nextFloat();
+                sc.nextLine();
                 SinhVien sinhVien = new SinhVien(i + 1, hoTen, lop, ngaySinh, gpa);
                 list.add(sinhVien);
             }
@@ -22,4 +23,7 @@ public class main {
             }
         }
     }
+
+
+
 
